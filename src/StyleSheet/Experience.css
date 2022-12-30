@@ -1,0 +1,156 @@
+.exp {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  width: calc(100vw - 10px);
+  background-image: url(../Assets/gradBg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  filter: contrast(0.9);
+  font-size: 1vw;
+}
+.Indicator{
+    font-size: 1vw;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    z-index:10;
+    margin-top: -2.5vw;
+    margin-left: -4.25vw;
+    width: 4vw;
+}
+.rightInd{
+    z-index:12;
+    margin-left: 40.25vw;
+}
+.ball {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #183efb;
+  padding: 0;
+  margin-top: 0.5vw;
+}
+.leftball{
+    margin-left: -2.75vw; /* ballWidth/2 + padding of border + borderWidth/2 */
+}
+.tracker {
+  border-left: 0.3vw #99c7ff solid;
+  padding: 1.5vw 0vw 1.5vw 2vw;
+}
+
+.righttracker{
+    /* border-right: 0.3vw lightgreen solid; */
+    border-right: 0.3vw #99c7ff solid;
+    padding: 1.5vw 2vw 1.5vw 0vw;
+}
+.rightball{
+    margin-left: 41.875vw;
+    /* ballWidth/2 + padding of border + borderWidth/2 */
+}
+.leftempty{
+    width: 42vw;
+    /* if borders are enabled */
+    /* width: 40vw;
+    padding-left: 2.395vw; */
+    height: auto;
+    border-right: 0.3vw #99c7ff solid;
+}
+.rightempty{
+    width: 42vw;
+    height: auto;
+    border-left: 0.3vw #99c7ff solid;
+}
+.expCard{
+    width: 40vw;
+    height: 10vw;
+    background-color: #f3f9fb;
+    position: relative;
+    /* Border for card */
+    /* border:0.2vw solid #47beff; */
+    
+}
+
+.expCard::before, .expCard::after{
+    content: '';
+    position: absolute;
+    background-color: #f3f9fb;
+    width: 3%;
+    height: 10%;  
+}
+
+.leftExp{
+    border-radius: 0px 15px 15px 15px;
+}
+/* Borders for leftExp card */
+/* .leftExp::before, .leftExp::after{
+    border-left:0.25vw solid #47beff;
+} */
+
+.leftExp::before{
+    transform: skew(-45deg, 0);
+    top:-0.5%;
+    left:-1.75%;
+}
+.leftExp::after{
+    transform: skew(45deg, 0);
+    top:9.5%;
+    left:-1.75%;
+}
+.rightExp{
+    border-radius: 15px 0px 15px 15px;
+}
+/* Borders for rightExp card */
+/* .rightExp::before, .rightExp::after{
+    border-right:0.25vw solid #47beff;
+} */
+.rightExp::before{
+    transform: skew(45deg, 0);
+    top:-0.5%;
+    right:-1.75%;
+}
+.rightExp::after{
+    transform: skew(-45deg, 0);
+    top:9.5%;
+    right:-1.75%;
+}
+
+.year,.brief,.head,.grade{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+    line-height: 90%;
+    text-align: left;
+    padding: 0em 1.1em;
+    word-break: break-word;
+}
+.year,.head, .grade{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.year{
+    padding-top: 0.9em;
+    margin-right: 1vw;
+}
+.brief{
+    line-height: 140%;
+}
+.grade{
+    margin: 0;
+    margin-right: 1vw;
+}
+.gradingdiv{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding-top: 0;
+    margin: 0;
+}
+.expHeading{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}

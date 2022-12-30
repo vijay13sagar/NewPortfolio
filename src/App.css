@@ -1,38 +1,138 @@
 .App {
   text-align: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background-color: white;
+  /* background: linear-gradient(#5abaff, #cafff2); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stickyarr {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 87.5vh;
+  left: 92.5vw;
+  width: 4vw;
+  transform: rotate(90deg);
+  z-index:100000;
+  animation: up 1s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  height: 3vh;
+  width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navins {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.navitem {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  margin: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.ver {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: space-evenly;
+  top: 8vh;
+  text-align: center;
+  height: fit-content;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  background-color: transparent;
+  overflow: visible;
+}
+
+.logo {
+  height: 90%;
+  width: auto;
+}
+
+/* Hover Actions */
+
+.navitem:hover {
+  background-color: rgb(102, 0, 255);
+  border-radius: 0.5rem;
+  transition: 0.2s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  animation: rotate 2s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Media Queries */
+
+@media (max-width: 720px) {
+  .icon {
+    margin-right: 2vh;
+  }
+  .navins {
+    display: none;
+  }
+  .navbar {
+    height: 8vh;
+    justify-content: space-between;
+  }
+  .logo {
+    height: 95%;
+    margin-left: 2vh;
+  }
+  
+}
+
+@media (min-width:720px) {
+  .menuoption{
+    display: none;
+  }
+}
+
+/* Animations */
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+/* Scrollbar Style */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #d2f6ed;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#0075fe, #7ff5fd, #0075fe);
+  border-radius: 10px;
 }

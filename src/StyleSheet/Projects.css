@@ -1,0 +1,170 @@
+.proj {
+  width: calc(100vw - 10px);
+  height: auto;
+  display: grid;
+  font-size: 1.2vh;
+  background-image: linear-gradient(to right,#97f6fd, #eaf1ff, #97f6fd);
+  /* #5cf2fd */
+}
+.projTitle{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+.projMsg{
+  color: #041320;
+  font-family: "Prosto One", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: #ffffff 2px 2px 2px,#000000 -2px 2px 2px;
+}
+.projCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card0{
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4cZe0B6uLOZy1ABD0b5qi17Dqu2niY51gcSA8qERdSkeLCC7lWy-eDcn15zIHfYdjSf5PpUWP-RvJvuuiQ1vtmuzKK4C3vdAITbk21Jr4-B7gq6DeSFNeU4OkPL1anki2iou7HtLHaT0MoaJ_h0D9AH179UQXbrVJhnde96OGdCFRHSju_ywLFJ-srw/w639-h340/muzzlzHome.png');
+}
+.card1{
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwQ3jbMNYyhRwolslNpah7fPNX36KDtYGSmMngZaLF2bvJlBzbe26BXLxx9oMdpsVCNfwb2-avYGF6uwEu93cf8idEaHbgpbthbGNcD649SryiaHK4afdnqpxPL42T5UknGceMGSOubSOmDExxLq3bHJMCVqFHvvoUVo-oeII_GPYkOwA-BAnLb-GFMA/w630-h324/finastra1.png');
+}
+.card2{
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfNJfWMFsTrO3tXpedo2_nxcYFospBsMZFtvsl9hnEPWIcHkMzL_x_QTQo3lZ8rv2Ucog2ERIOzmpDDgsl3o2Eq52JQUf1XsDMbpo-IpnFJ0hrd-zzGRI253Y8uwuGlyY0QbGlxQCL59cYIr6A0-bciQmJAdG1HtHchWh9q9TmR8BkRQgeMHgdb80z_g/w643-h343/portfolio1.png');
+}
+
+.projCard {
+  width: 40vw;
+  height: 20vw;
+  /* background-image: url(../Assets/muzzlzHome.png); */
+  background-size: cover;
+  border-radius: 2vw;
+  margin: 3vh 0;
+  filter: contrast(1.1);
+  overflow-y: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.322), 
+  0 2px 2px rgba(0, 0, 0, 0.322), 
+  0 3px 3px rgba(0, 0, 0, 0.322), 
+  0 5px 5px rgba(0, 0, 0, 0.322),
+  0 8px 8px rgba(0, 0, 0, 0.322);
+}
+.projCard:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.322), 
+    1px 2px 2px rgba(0, 0, 0, 0.322), 
+    -1px 2px 2px rgba(0, 0, 0, 0.322), 
+    2px 4px 4px rgba(0, 0, 0, 0.322), 
+    -2px 4px 4px rgba(0, 0, 0, 0.322),
+    4px 8px 8px rgba(0, 0, 0, 0.322),
+    -4px 8px 8px rgba(0, 0, 0, 0.322),
+    8px 16px 12px rgba(0, 0, 0, 0.322);
+}
+
+.projCard:hover .projHead {
+  font-size: 1.45em;
+  filter: contrast(1.5) brightness(1.2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+}
+.projCard:hover .projText {
+  bottom: 4em;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
+  text-shadow: -2px 2px 10px #212cfe;
+  filter: drop-shadow(2px 2px 20px white);
+}
+.projCard:hover .btn {
+    bottom: 1em;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+  }
+.text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding: 1.5em;
+  word-break: break-word;
+}
+.projHead {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: aliceblue;
+  text-shadow: 2px 2px 6px black;
+}
+.projText {
+  position: absolute;
+  z-index: 10;
+  bottom: -5em;
+  font-size: 1.1em;
+  color: aliceblue;
+  text-align: start;
+  padding: 0 5em;
+}
+.btn {
+  width: 20%;
+  height: 3em;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.9em 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  bottom: -5em;
+  left: 40%;
+  font-size: 1.2em;
+}
+
+.btn:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: transparent;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  color: #fff;
+}
+.btn:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .proj{
+    font-size: 0.9vw;
+  }
+}
+@media (max-width: 1000px) {
+  .proj{
+    font-size: 0.8vw;
+  }
+}
