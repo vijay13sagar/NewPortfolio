@@ -51,7 +51,7 @@ const Contact = () => {
         />
       </a>
       
-      <p className="contacthead">Contact</p>
+    <p className="contacthead">Contact</p>
     <p className="message">{msg}</p>
     </div>
   );

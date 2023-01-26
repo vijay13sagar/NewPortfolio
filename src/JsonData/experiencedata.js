@@ -49,7 +49,8 @@ export const Expdata = [
     title1: "Conestoga College",
     levelOfEd: "Post Graduate Program - Embedded Systems Development",
     grade: "3.9 GPA",
-    text1: "I have completed Post Graduation Diploma in the Embedded systems development program with distinction. In this course, · I have learned Assembly level Programming. · Always stood in the top 3 in the class and actively participated in the Student games club.",
+    text1: "I have completed Post Graduation Diploma in the Embedded systems development program with distinction. In this course, I have learned Assembly level Programming, Computer Architecure, worked on Linux Device drivers,and designed PCB · Always stood in the top 3 in the class and actively participated in the Student games club. Our Final Project is to learn won the best in the class. ",
+
     year2: "Nov 2021 - Present",
     company: "Varsity Tutors",
     title2: "Coding Instructor - Part-Time",

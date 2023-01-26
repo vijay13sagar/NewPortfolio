@@ -1,16 +1,16 @@
 import React from "react";
 import "../StyleSheet/Common.css";
-import '../StyleSheet/Home.css';
+import "../StyleSheet/Home.css";
 import HomeImg from "../Assets/mainhome.png";
 
 const Home = () => {
   return (
-    <div id='info' className="waveSection">
+    <div id="info" className="waveSection">
       <div className="hordiv">
         <div className="halfside">
           <p className="content">
-            I'm a very energetic and self-motivated Front-end Developer located
-            in Ontario, Canada. I love to work in any environment as it helps me
+            I'm a very energetic and self-motivated Full-Stack Developer in
+            Ontario, Canada. I love to work in any environment as it helps me
             gain more knowledge and experience.
             <br />
             <br /> Apart from academics, I always find myself with positive
@@ -22,13 +22,13 @@ const Home = () => {
             <br />
             My dream is to grow along with the organization by using my
             knowledge to develop the organization. Interested in the entire
-            Front-end spectrum and working on ambitious projects with positive
+            Full-Stack spectrum and working on ambitious projects with positive
             people.
           </p>
           <p className="content">Let's Build...</p>
         </div>
         <div className="halfside noShow">
-          <img className="infoimg" src={HomeImg} alt='mainhome'/>
+          <img className="infoimg" src={HomeImg} alt="mainhome" />
         </div>
       </div>
       <div className="wave wave1"></div>

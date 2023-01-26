@@ -111,7 +111,8 @@
   }
   .content{
     font-size: 0.8em;
-    background: linear-gradient(to right, #011579, #010102);
+    background: linear-gradient(to right, #68b6ff, #f8dbff);
+    text-shadow: black 1px 1px;
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }

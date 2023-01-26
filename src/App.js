@@ -8,7 +8,7 @@ import Projects from './Screens/Projects';
 import leftarr from './Assets/leftarr.svg';
 import cross_icon from './Assets/cross_icon.svg';
 import menu_icon from './Assets/menu_icon.svg';
-import logo from './Assets/logo.png';
+import log from './Assets/log.png';
 import './StyleSheet/Home.css';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className='navbar'>
-        <img className='logo' src={logo} alt='logo' />
+        <img className='logo' src={log} alt='logo' />
         <div className='navins'>
           <Link  to='info' smooth={true} duration={5000}><p className='navitem'>About</p></Link>
           <Link  to='work' smooth={true} duration={1000} ><p className='navitem'>Work</p></Link>

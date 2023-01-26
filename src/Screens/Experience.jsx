@@ -12,13 +12,11 @@ const Experience = () => {
           <div className="hordiv" key={item.id}>
             {item.title1 ? (
               <div className="righttracker">
-                <div className="ball rightball"></div>
+                <div className="ball leftball"></div>
                 {!item.year2 ? (
-                  <p className="Indicator rightInd">{item.indicator}</p>
-                ) : (
-                  <p></p>
-                )}
-                <div className="expCard rightExp">
+                  <p className="Indicator leftInd">{item.indicator}</p>
+                ) : null}
+                <div className="expCard leftExp">
                   <div className="gradingdiv">
                     <p className="year">{item.year1}</p>
                     <p className="year">{item.grade}</p>
@@ -36,9 +34,9 @@ const Experience = () => {
             )}
             {item.title2 ? (
               <div className="tracker">
-                <div className="ball leftball"></div>
+                <div className="ball rightball"></div>
                 <p className="Indicator">{item.indicator}</p>
-                <div className="expCard leftExp">
+                <div className="expCard rightExp">
                   <p className="year">{item.year2}</p>
                   <div className="gradingdiv">
                     <p className="grade">{item.title2}</p>
