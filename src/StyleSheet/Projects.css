@@ -158,8 +158,8 @@
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .proj{
     font-size: 0.5vh;
   }
-}
+} */

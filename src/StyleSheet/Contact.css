@@ -126,7 +126,10 @@
     font-size: 3em;
   }
   .leaned-image {
-    transform: scale(1.5);
+    height: scale(1.5);
+  }
+  .images-leaning{
+    height: 42.5vh;
   }
   .images-leaning > a:nth-of-type(1) {
     margin-left: 55vw;
@@ -146,8 +149,8 @@
   .leaned-image {
     transform: scale(1.5);
   }
-  .message {
-    font-size: 1.3em;
+  .images-leaning{
+    height: 40vh;
   }
   .images-leaning > a:nth-of-type(1) {
     margin-left: 50vw;
@@ -168,7 +171,10 @@
     transform: scale(1.6);
   }
   .message {
-    font-size: 1.2em;
+    font-size: 1.5em;
+  }
+  .images-leaning{
+    height: 35vh;
   }
   .images-leaning > a:nth-of-type(1) {
     margin-left: 55vw;
@@ -188,8 +194,8 @@
   .leaned-image {
     transform: scale(2);
   }
-  .message {
-    font-size: 1em;
+  .images-leaning{
+    height: 30vh;
   }
   .images-leaning > a:nth-of-type(1) {
     margin-left: 55vw;
